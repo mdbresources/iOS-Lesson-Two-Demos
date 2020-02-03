@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54431DE623E8C49C0093C6D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54431DE523E8C49C0093C6D6 /* Constants.swift */; };
 		54AA8FBF23E5410400B14D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FBE23E5410400B14D5E /* AppDelegate.swift */; };
 		54AA8FC123E5410400B14D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FC023E5410400B14D5E /* SceneDelegate.swift */; };
 		54AA8FC323E5410400B14D5E /* TinderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FC223E5410400B14D5E /* TinderVC.swift */; };
 		54AA8FC623E5410400B14D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AA8FC423E5410400B14D5E /* Main.storyboard */; };
 		54AA8FC823E5410600B14D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54AA8FC723E5410600B14D5E /* Assets.xcassets */; };
 		54AA8FCB23E5410600B14D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AA8FC923E5410600B14D5E /* LaunchScreen.storyboard */; };
-		54AA8FD323E545B200B14D5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FD223E545B100B14D5E /* Constants.swift */; };
 		54AA8FD523E54FF100B14D5E /* TinderVC-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FD423E54FF100B14D5E /* TinderVC-TableView.swift */; };
 		54AA8FD723E550C700B14D5E /* PreferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FD623E550C700B14D5E /* PreferenceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54431DE523E8C49C0093C6D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		54AA8FBB23E5410400B14D5E /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AA8FBE23E5410400B14D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AA8FC023E5410400B14D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		54AA8FC723E5410600B14D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54AA8FCA23E5410600B14D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54AA8FCC23E5410600B14D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54AA8FD223E545B100B14D5E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		54AA8FD423E54FF100B14D5E /* TinderVC-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TinderVC-TableView.swift"; sourceTree = "<group>"; };
 		54AA8FD623E550C700B14D5E /* PreferenceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +100,7 @@
 				54AA8FC423E5410400B14D5E /* Main.storyboard */,
 				54AA8FBE23E5410400B14D5E /* AppDelegate.swift */,
 				54AA8FC023E5410400B14D5E /* SceneDelegate.swift */,
-				54AA8FD223E545B100B14D5E /* Constants.swift */,
+				54431DE523E8C49C0093C6D6 /* Constants.swift */,
 				54AA8FC723E5410600B14D5E /* Assets.xcassets */,
 				54AA8FC923E5410600B14D5E /* LaunchScreen.storyboard */,
 				54AA8FCC23E5410600B14D5E /* Info.plist */,
@@ -184,7 +184,7 @@
 				54AA8FD723E550C700B14D5E /* PreferenceCell.swift in Sources */,
 				54AA8FBF23E5410400B14D5E /* AppDelegate.swift in Sources */,
 				54AA8FC123E5410400B14D5E /* SceneDelegate.swift in Sources */,
-				54AA8FD323E545B200B14D5E /* Constants.swift in Sources */,
+				54431DE623E8C49C0093C6D6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
