@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541D549F23ED2F2E00571A0E /* TinderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D549E23ED2F2E00571A0E /* TinderManager.swift */; };
+		541D54A223ED36B600571A0E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D54A123ED36B600571A0E /* ProfileVC.swift */; };
+		541D54A423ED39C100571A0E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D54A323ED39C100571A0E /* Person.swift */; };
 		54431DE623E8C49C0093C6D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54431DE523E8C49C0093C6D6 /* Constants.swift */; };
 		54AA8FBF23E5410400B14D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FBE23E5410400B14D5E /* AppDelegate.swift */; };
 		54AA8FC123E5410400B14D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA8FC023E5410400B14D5E /* SceneDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541D549E23ED2F2E00571A0E /* TinderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderManager.swift; sourceTree = "<group>"; };
+		541D54A123ED36B600571A0E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		541D54A323ED39C100571A0E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		54431DE523E8C49C0093C6D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		54AA8FBB23E5410400B14D5E /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AA8FBE23E5410400B14D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541D549B23ED2D5A00571A0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				541D549E23ED2F2E00571A0E /* TinderManager.swift */,
+				541D54A323ED39C100571A0E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		541D54A023ED369C00571A0E /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				541D54A123ED36B600571A0E /* ProfileVC.swift */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
 		54AA8FB223E5410300B14D5E = {
 			isa = PBXGroup;
 			children = (
@@ -62,19 +85,21 @@
 		54AA8FBD23E5410400B14D5E /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
-				54AA8FFA23E55ED000B14D5E /* Views */,
-				54AA8FF823E55EB600B14D5E /* Controllers */,
+				541D549B23ED2D5A00571A0E /* Model */,
+				54AA8FFA23E55ED000B14D5E /* View */,
+				54AA8FF823E55EB600B14D5E /* Controller */,
 				54AA8FFB23E55EE700B14D5E /* Resources */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
 		};
-		54AA8FF823E55EB600B14D5E /* Controllers */ = {
+		54AA8FF823E55EB600B14D5E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				541D54A023ED369C00571A0E /* ProfileVC */,
 				54AA8FF923E55EC400B14D5E /* TinderVC */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		54AA8FF923E55EC400B14D5E /* TinderVC */ = {
@@ -86,12 +111,12 @@
 			path = TinderVC;
 			sourceTree = "<group>";
 		};
-		54AA8FFA23E55ED000B14D5E /* Views */ = {
+		54AA8FFA23E55ED000B14D5E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				54AA8FD623E550C700B14D5E /* PreferenceCell.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		54AA8FFB23E55EE700B14D5E /* Resources */ = {
@@ -180,9 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AA8FC323E5410400B14D5E /* TinderVC.swift in Sources */,
+				541D549F23ED2F2E00571A0E /* TinderManager.swift in Sources */,
 				54AA8FD523E54FF100B14D5E /* TinderVC-TableView.swift in Sources */,
 				54AA8FD723E550C700B14D5E /* PreferenceCell.swift in Sources */,
+				541D54A223ED36B600571A0E /* ProfileVC.swift in Sources */,
 				54AA8FBF23E5410400B14D5E /* AppDelegate.swift in Sources */,
+				541D54A423ED39C100571A0E /* Person.swift in Sources */,
 				54AA8FC123E5410400B14D5E /* SceneDelegate.swift in Sources */,
 				54431DE623E8C49C0093C6D6 /* Constants.swift in Sources */,
 			);

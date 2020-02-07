@@ -11,12 +11,14 @@ import UIKit
 
 extension TinderVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return preferences.count
+        return TinderManager.shared.getSize()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PreferenceCell", for: indexPath) as! PreferenceCell
-        cell.preference.text = preferences[indexPath.row]
+        cell.person = TinderManager.shared.preferenceList[indexPath.row]
+        //cell.preferenceImage.image = TinderManager.shared.getPreferenceImage(index: indexPath.row)
+        //cell.preferenceText.text = TinderManager.shared.getPreferenceText(index: indexPath.row)
         return cell
     }
 }

@@ -14,23 +14,30 @@ class TinderVC: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var numberOfViewsLabel: UILabel!
-    var numberOfViews = 0
-    var preferences: [String] = []
+    var numberOfViews = 0 {
+        didSet {
+            numberOfViewsLabel.text = String(numberOfViews)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         generatePerson()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        preferenceTableView.reloadData()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         numberOfViews += 1
-        numberOfViewsLabel.text = String(numberOfViews)
+        //numberOfViewsLabel.text = String(numberOfViews)
     }
     
     @IBAction func reject(_ sender: Any) {
         if let real_name = name.text {
-            preferences.append("Despises " + real_name)
+            TinderManager.shared.addPreference(name: real_name, image: Constants.getImageFor(name: real_name), liked: false)
         }
         preferenceTableView.reloadData()
         generatePerson()
@@ -38,7 +45,7 @@ class TinderVC: UIViewController {
     
     @IBAction func accept(_ sender: Any) {
         if let real_name = name.text {
-            preferences.append("Loves " + real_name)
+            TinderManager.shared.addPreference(name: real_name, image: Constants.getImageFor(name: real_name), liked: true)
         }
         preferenceTableView.reloadData()
         generatePerson()
