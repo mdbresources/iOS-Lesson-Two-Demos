@@ -1,0 +1,3 @@
+# iOS-Lesson-Two-Demos
+
+The repository contains the demo for Lesson 2 of MDB's iOS training program, **iOS SDK**. This demo, Tinder, is intended to teach students about the Tab Bar Controller, the View Controller Life Cycle, MVC, and Delegate Design Pattern. Additionally, Singletons and Property Observers may be used and taught if time allows for it. For this repository, the Constants.swift file and member images in the Assets.xcassets are removed to respect the privacy of MDB members. Lesson 2 slides are available [here](https://docs.google.com/presentation/d/1BQ2_3eQYygKwalWQtATMAwOfKhXZLveuhcUA93C0WdA/edit?usp=sharing).
