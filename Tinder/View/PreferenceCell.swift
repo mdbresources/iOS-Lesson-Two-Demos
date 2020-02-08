@@ -13,10 +13,10 @@ class PreferenceCell: UITableViewCell {
     @IBOutlet weak var preferenceText: UILabel!
     @IBOutlet weak var preferenceImage: UIImageView!
     
-    var person: Person? {
-        didSet {
-            preferenceText.text = person?.text
-            preferenceImage.image = person?.image
-        }
-    }
+//    var person: Person? {
+//        didSet {
+//            preferenceText.text = person?.text
+//            preferenceImage.image = person?.image
+//        }
+//    }
 }

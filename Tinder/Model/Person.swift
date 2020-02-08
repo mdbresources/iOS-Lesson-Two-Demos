@@ -14,15 +14,15 @@ class Person {
     var image: UIImage
     var liked: Bool
     
-    var text:String {
-        get {
-            if liked {
-                return "Loves " + name
-            } else {
-                return "Despises " + name
-            }
-        }
-    }
+//    var text:String {
+//        get {
+//            if liked {
+//                return "Loves " + name
+//            } else {
+//                return "Despises " + name
+//            }
+//        }
+//    }
     
     init(name: String, image: UIImage, liked: Bool) {
         self.name = name
@@ -30,11 +30,11 @@ class Person {
         self.liked = liked
     }
     
-//    func getText() -> String {
-//        if liked {
-//            return "Loves " + name
-//        } else {
-//            return "Despises " + name
-//        }
-//    }
+    func getText() -> String {
+        if liked {
+            return "Loves " + name
+        } else {
+            return "Despises " + name
+        }
+    }
 }

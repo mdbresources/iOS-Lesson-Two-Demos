@@ -14,11 +14,12 @@ class TinderVC: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var numberOfViewsLabel: UILabel!
-    var numberOfViews = 0 {
-        didSet {
-            numberOfViewsLabel.text = String(numberOfViews)
-        }
-    }
+    var numberOfViews = 0
+//    {
+//        didSet {
+//            numberOfViewsLabel.text = String(numberOfViews)
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class TinderVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         numberOfViews += 1
-        //numberOfViewsLabel.text = String(numberOfViews)
+        numberOfViewsLabel.text = String(numberOfViews)
     }
     
     @IBAction func reject(_ sender: Any) {

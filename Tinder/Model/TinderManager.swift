@@ -31,7 +31,7 @@ class TinderManager {
     }
     
     func getPreferenceText(index: Int) -> String {
-        return preferenceList[index].text
+        return preferenceList[index].getText()
     }
     
     func getSize() -> Int {

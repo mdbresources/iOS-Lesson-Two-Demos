@@ -16,9 +16,9 @@ extension TinderVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PreferenceCell", for: indexPath) as! PreferenceCell
-        cell.person = TinderManager.shared.preferenceList[indexPath.row]
-        //cell.preferenceImage.image = TinderManager.shared.getPreferenceImage(index: indexPath.row)
-        //cell.preferenceText.text = TinderManager.shared.getPreferenceText(index: indexPath.row)
+//        cell.person = TinderManager.shared.preferenceList[indexPath.row]
+        cell.preferenceImage.image = TinderManager.shared.getPreferenceImage(index: indexPath.row)
+        cell.preferenceText.text = TinderManager.shared.getPreferenceText(index: indexPath.row)
         return cell
     }
 }
